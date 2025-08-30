@@ -28,24 +28,27 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I'm Monish Sathyaprakash, an aspiring operations leader and
-          digital aviation enthusiast with a passion for driving innovation
-          through simulation, predictive maintenance, and cross-functional
-          collaboration. I’m currently pursuing an MSc in Aviation Digital
-          Technology Management at Cranfield University, UK, and I hold a BSc in
-          Aviation Transport from Riga Technical University, Latvia. I bring
-          hands-on experience in aviation operations, having interned at
-          airBaltic where I optimized interior maintenance workflows and
-          streamlined inventory control. My technical toolkit includes Python,
-          Power BI, AnyLogic, Blender, and JIRA, and I’ve led impactful projects
-          like a Smart Hangar Digital Twin and an Airbus AR training solution to
-          enhance operational efficiency. With a strong foundation in systems
-          thinking, data-driven decision-making, and aviation engineering
-          principles, I’m passionate about improving MRO processes, implementing
-          digital transformation strategies, and advancing into leadership roles
-          within aviation and manufacturing sectors.
-          <br className="sm:block hidden" />
-          Let's collaborate to bring your ideas to life!
+          <div>
+            Hello! I&apos;m Monish Sathyaprakash, an aspiring operations leader and
+            digital aviation enthusiast with a passion for driving innovation
+            through simulation, predictive maintenance, and cross-functional
+            collaboration. I&apos;m currently pursuing an MSc in Aviation Digital
+            Technology Management at Cranfield University, UK, and I hold a BSc in
+            Aviation Transport from Riga Technical University, Latvia. I bring
+            hands-on experience in aviation operations, having interned at
+            airBaltic where I optimized interior maintenance workflows and
+            streamlined inventory control. My technical toolkit includes Python,
+            Power BI, AnyLogic, Blender, and JIRA, and I&apos;ve led impactful projects
+            like a Smart Hangar Digital Twin and an Airbus AR training solution to
+            enhance operational efficiency. With a strong foundation in systems
+            thinking, data-driven decision-making, and aviation engineering
+            principles, I&apos;m passionate about improving MRO processes, implementing
+            digital transformation strategies, and advancing into leadership roles
+            within aviation and manufacturing sectors.
+            <br className="sm:block hidden" />
+            Let&apos;s collaborate to bring your ideas to life!
+          </div>
+
         </div>
         <div className="w-fit break-words">
           <Link
