@@ -45,7 +45,7 @@ function About() {
           digital transformation strategies, and advancing into leadership roles
           within aviation and manufacturing sectors.
           <br className="sm:block hidden" />
-          Let&apos;s collaborate to bring your ideas to life!
+          Let's collaborate to bring your ideas to life!
         </div>
         <div className="w-fit break-words">
           <Link
