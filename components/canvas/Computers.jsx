@@ -9,42 +9,39 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 
 import CanvasLoader from "../Loader";
-import ComputerModel from "./models/ComputerModel";
 
-function Computers({ isMobile }) {
-  const { nodes, materials } = useGLTF("/models/desktop_pc/scene.gltf");
-
+function AirbusModel({ isMobile }) {
+  const { scene } = useGLTF("/models/desktop_pc/Airbus.gltf");
   return (
     <>
       <hemisphereLight intensity={1} groundColor="black" />
       <ambientLight intensity={0.65} />
-      <spotLight intensity={1} position={[0, 1.5, 0.7]} angle={0.12} />
-      <PerspectiveCamera makeDefault position={[0, 0, -8]} fov={30} />
+      <spotLight intensity={1} position={[0, 1.5, 0.7]} angle={0.3} />
       <pointLight intensity={2} position={[1, 1.3, 0]} color={"#804dee"} />
       <pointLight intensity={2} position={[-1, 1.3, 1]} color={"#804dee"} />
+
+      <PerspectiveCamera makeDefault position={[0, 2, 20]} fov={35} />
+
       <OrbitControls
-        enableZoom={false}
+        enableZoom
         maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-        enableDamping={true}
+        minPolarAngle={0}
+        enableDamping
         dampingFactor={0.05}
-        enablePan={false}
-        autoRotateSpeed={4}
-        autoRotate={isMobile && true}
-        makeDefault
+        enablePan
       />
-      <ComputerModel
-        nodes={nodes}
-        materials={materials}
-        scale={isMobile ? 0.45 : 0.35}
-        position={isMobile ? [-0.75, -0.7, 0] : [-0.5, -0.5, 0]}
-        rotation={[-0.01, 1.6, -0.1]}
+
+      <primitive
+        object={scene}
+        scale={0.08}
+        position={[0, -1, 2]} 
+        rotation={[0, Math.PI, 0]}
       />
     </>
   );
 }
 
-function ComputersCanvas({ isMobile }) {
+export default function AirbusCanvas({ isMobile }) {
   return (
     <Canvas
       dpr={[1, 2]}
@@ -56,11 +53,9 @@ function ComputersCanvas({ isMobile }) {
       className="cursor-pointer"
     >
       <Suspense fallback={<CanvasLoader />}>
-        <Computers isMobile={isMobile} />
+        <AirbusModel isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
   );
 }
-
-export default ComputersCanvas;

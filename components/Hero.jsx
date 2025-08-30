@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
-import { ComputersCanvas } from "./canvas";
-import { fadeIn, textVariant } from "@/utils/motion";
 import { heroTexts } from "@/constants";
+import { fadeIn, textVariant } from "@/utils/motion";
+import { ComputersCanvas } from "./canvas";
 
 function Hero({ loading, isMobile }) {
   return (
@@ -26,7 +26,7 @@ function Hero({ loading, isMobile }) {
         >
           <h1 className={`heroHeadText`}>
             Hi, I&apos;m{" "}
-            <span className="dark:text-five text-primary">Shivam</span>
+            <span className="dark:text-five text-primary">Monish</span>
           </h1>
           <p className={`heroSubText mt-2 tracking-wide`}>
             <TypeAnimation

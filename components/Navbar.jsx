@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-import { navLinks } from "../constants";
-import ThemeButton from "./ThemeButton";
-import Menu from "./../public/assets/icons/menu.svg";
-import Close from "./../public/assets/icons/close.svg";
 import { slideIn } from "@/utils/motion";
+import { navLinks } from "../constants";
+import Close from "./../public/assets/icons/close.svg";
+import Menu from "./../public/assets/icons/menu.svg";
+import ThemeButton from "./ThemeButton";
 
 function Navbar() {
 	const [active, setActive] = useState("");
@@ -70,10 +70,10 @@ function Navbar() {
 						</div>
 						<Link href="/">
 							<p className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[18px] font-bold cursor-pointer flex ">
-								Shivam Sharma &nbsp;
+								Monish Sathyaprakash &nbsp;
 								<span className="lg:block hidden">
 									{" "}
-									| Frontend Developer
+									| Operations & Maintenance Engineering
 								</span>
 							</p>
 						</Link>

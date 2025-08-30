@@ -1,14 +1,9 @@
+import { Cpu, Plane, Users, Wrench } from "lucide-react";
 import GithubIcon from "./../public/assets/icons/github.svg";
+import InstagramIcon from "./../public/assets/icons/instagram.svg";
 import LinkedInIcon from "./../public/assets/icons/linkedin.svg";
 import XIcon from "./../public/assets/icons/x.svg";
-import InstagramIcon from "./../public/assets/icons/instagram.svg";
-import FrontendIcon from "./../public/assets/icons/frontend.svg";
-import LeaderShipIcon from "./../public/assets/icons/leadership.svg";
-import ProblemSolvingIcon from "./../public/assets/icons/problem-solving.svg";
-import FreelancerIcon from "./../public/assets/icons/freelance.svg";
-import BackendIcon from "./../public/assets/icons/backend.svg";
-import FullStackIcon from "./../public/assets/icons/full-stack.svg";
-
+// Wrench = maintenance, Plane = aviation, Cpu = AI/ML, Users = leadership/training
 const navLinks = [
   {
     id: "about",
@@ -34,134 +29,122 @@ const navLinks = [
 
 const services = [
   {
-    title: "Software Developer",
-    icon: <FullStackIcon />,
+    title: "Aircraft Maintenance & Reliability",
+    icon: <Wrench className="w-15 h-15 text-blue-400" />, // aviation maintenance feel
   },
   {
-    title: "Frontend Developer",
-    icon: <FrontendIcon />,
-  },
-  // {
-  //   title: "Backend Developer",
-  //   icon: <BackendIcon />,
-  // },
-  {
-    title: "Problem Solving",
-    icon: <ProblemSolvingIcon />,
+    title: "Digital Twin & Simulation",
+    icon: <Plane className="w-15 h-15 text-green-400" />, // represents aircraft & simulation
   },
   {
-    title: "Freelancer",
-    icon: <FreelancerIcon />,
+    title: "Predictive Maintenance (AI/ML)",
+    icon: <Cpu className="w-15 h-15 text-purple-400" />, // AI/ML & data-driven insights
   },
-  // {
-  //   title: "Leadership",
-  //   icon: <LeaderShipIcon />,
-  // },
+  {
+    title: "Team Leadership & Training",
+    icon: <Users className="w-15 h-15 text-yellow-400" />, // teamwork & training
+  },
 ];
 
 const technologies = {
   languages: [
     {
-      name: "HTML5",
-      icon: "/assets/tech/html5.svg",
-      link: "https://html.spec.whatwg.org/multipage/",
-    },
-    {
-      name: "CSS3",
-      icon: "/assets/tech/css3.svg",
-      link: "https://www.w3.org/Style/CSS/Overview.en.html",
-    },
-    {
-      name: "JavaScript",
-      icon: "/assets/tech/javascript.svg",
-      link: "https://262.ecma-international.org/",
-    },
-    {
-      name: "TypeScript",
-      icon: "/assets/tech/typescript.svg",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      name: "C",
-      icon: "/assets/tech/c.svg",
-      link: "https://en.cppreference.com/w/c",
-    },
-    {
-      name: "Java",
-      icon: "/assets/tech/java.svg",
-      link: "https://www.java.com/en/",
-    },
-    {
       name: "Python",
       icon: "/assets/tech/python.svg",
-      link: "https://www.python.org/",
+      link: "https://www.python.org",
+    },
+    {
+      name: "C++",
+      icon: "/assets/tech/icons8-c++.svg",
+      link: "https://isocpp.org",
+    },
+    {
+      name: "SQL",
+      icon: "/assets/tech/sql-database.svg",
+      link: "https://www.mysql.com",
+    },
+    {
+      name: "MATLAB",
+      icon: "/assets/tech/matlab-svgrepo-com.svg",
+      link: "https://www.mathworks.com",
+    },
+    // {
+    //   name: "C",
+    //   icon: "/assets/tech/c.svg",
+    //   link: "https://en.cppreference.com/w/c",
+    // },
+    // {
+    //   name: "Java",
+    //   icon: "/assets/tech/java.svg",
+    //   link: "https://www.java.com/en/",
+    // },
+    
+  ],
+  Engineering_Software: [
+    {
+      name: "SolidWorks",
+      icon: "/assets/tech/solidworks.svg",
+      link: "https://www.solidworks.com",
+    },
+    {
+      name: "Ansys",
+      icon: "/assets/tech/ansys@logotyp.us.svg",
+      link: "https://www.ansys.com",
+    },
+    {
+      name: "Autodesk Inventor",
+      icon: "/assets/tech/autodesk-inventor-seeklogo.svg",
+      link: "https://www.autodesk.com/products/inventor",
+    },
+    {
+      name: "Blender",
+      icon: "/assets/tech/blender-2.svg",
+      link: "https://www.blender.org",
     },
   ],
-  frameworks: [
+  Data_and_Analytics_Tools: [
     {
-      name: "Next.js",
-      icon: "/assets/tech/nextjs.svg",
-      link: "https://nextjs.org/",
+      name: "Power BI",
+      icon: "/assets/tech/New_Power_BI_Logo.svg",
+      link: "https://powerbi.microsoft.com",
     },
     {
-      name: "TailwindCSS",
-      icon: "/assets/tech/tailwindcss.svg",
-      link: "https://tailwindcss.com/",
+      name: "scikit-learn",
+      icon: "/assets/tech/scikit-learn.svg",
+      link: "https://scikit-learn.org",
     },
     {
-      name: "Express.js",
-      icon: "/assets/tech/expressjs.png",
-      link: "https://expressjs.com/",
+      name: "JMP Pro",
+      icon: "/assets/tech/JMP.svg",
+      link: "https://www.jmp.com",
     },
     {
-      name: "Flutter",
-      icon: "/assets/tech/flutter.svg",
-      link: "https://flutter.dev/",
+      name: "AnyLogic",
+      icon: "/assets/tech/anylogic-1.svg",
+      link: "https://www.anylogic.com",
     },
+    // {
+    //   name: "Zustand",
+    //   icon: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg",
+    //   link: "https://zustand-demo.pmnd.rs",
+    // },
+    // {
+    //   name: "Redux/Redux-toolkit",
+    //   icon: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+    //   link: "https://redux.js.org",
+    // },
+    // {
+    //   name: "NextAuth.js",
+    //   icon: "/assets/tech/nextauthjs.png",
+    //   link: "https://next-auth.js.org/",
+    // },
+    // {
+    //   name: "Prisma",
+    //   icon: "/assets/tech/prisma.svg",
+    //   link: "https://www.prisma.io/",
+    // },
   ],
-  libraries: [
-    {
-      name: "React",
-      icon: "/assets/tech/react.svg",
-      link: "https://react.dev/",
-    },
-    {
-      name: "Three.js",
-      icon: "/assets/tech/threejs.svg",
-      link: "https://threejs.org/",
-    },
-    {
-      name: "Styled-Components",
-      icon: "/assets/tech/styled-components.png",
-      link: "https://styled-components.com/",
-    },
-    {
-      name: "Framer-motion",
-      icon: "/assets/tech/framer.svg",
-      link: "https://www.framer.com/motion/",
-    },
-    {
-      name: "Zustand",
-      icon: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg",
-      link: "https://zustand-demo.pmnd.rs",
-    },
-    {
-      name: "Redux/Redux-toolkit",
-      icon: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
-      link: "https://redux.js.org",
-    },
-    {
-      name: "NextAuth.js",
-      icon: "/assets/tech/nextauthjs.png",
-      link: "https://next-auth.js.org/",
-    },
-    {
-      name: "Prisma",
-      icon: "/assets/tech/prisma.svg",
-      link: "https://www.prisma.io/",
-    },
-  ],
-  tools: [
+  Project_and_Workflow_Tools: [
     {
       name: "Git",
       icon: "/assets/tech/git.svg",
@@ -173,50 +156,50 @@ const technologies = {
       link: "https://github.com/",
     },
     {
-      name: "Postman",
-      icon: "/assets/tech/postman.svg",
-      link: "https://www.postman.com/",
+      name: "JIRA",
+      icon: "/assets/tech/Jira_Logo.svg",
+      link: "https://www.atlassian.com/software/jira",
     },
     {
-      name: "Figma",
-      icon: "/assets/tech/figma.svg",
-      link: "https://www.figma.com/",
+      name: "Trello",
+      icon: "/assets/tech/trello-svgrepo-com.svg",
+      link: "https://trello.com",
     },
     {
-      name: "Docker",
-      icon: "/assets/tech/docker.svg",
-      link: "https://www.docker.com/",
+      name: "Workflo Plus",
+      icon: "/assets/tech/workflow-1.svg",
+      link: "https://intoware.com/workfloplus",
     },
   ],
-  environments: [
-    {
-      name: "Node.js",
-      icon: "/assets/tech/nodejs.svg",
-      link: "https://nodejs.org/en",
-    },
-  ],
-  databases: [
-    {
-      name: "MySQL",
-      icon: "/assets/tech/my-sql.png",
-      link: "https://www.mysql.com/",
-    },
-    {
-      name: "PostgreSQL",
-      icon: "/assets/tech/postgresql.png",
-      link: "https://www.postgresql.org",
-    },
-    {
-      name: "MongoDB",
-      icon: "/assets/tech/mongodb.svg",
-      link: "https://www.mongodb.com/",
-    },
-    {
-      name: "Firebase",
-      icon: "/assets/tech/firebase.svg",
-      link: "https://firebase.google.com/",
-    },
-  ],
+  // environments: [
+  //   {
+  //     name: "Node.js",
+  //     icon: "/assets/tech/nodejs.svg",
+  //     link: "https://nodejs.org/en",
+  //   },
+  // ],
+  // databases: [
+  //   {
+  //     name: "MySQL",
+  //     icon: "/assets/tech/my-sql.png",
+  //     link: "https://www.mysql.com/",
+  //   },
+  //   {
+  //     name: "PostgreSQL",
+  //     icon: "/assets/tech/postgresql.png",
+  //     link: "https://www.postgresql.org",
+  //   },
+  //   {
+  //     name: "MongoDB",
+  //     icon: "/assets/tech/mongodb.svg",
+  //     link: "https://www.mongodb.com/",
+  //   },
+  //   {
+  //     name: "Firebase",
+  //     icon: "/assets/tech/firebase.svg",
+  //     link: "https://firebase.google.com/",
+  //   },
+  // ],
 };
 
 const experiences = [
@@ -234,31 +217,33 @@ const experiences = [
   //   ],
   // },
   {
-    title: "Frontend Developer Intern",
-    company_name: "Intern at Curowell Healthcare Private Ltd",
-    icon: "/assets/company/curowell-logo.svg",
+    title: "Aircraft Interior Maintenance Intern",
+    company_name: "airBaltic (Airbus A220-300 Fleet)",
+    icon: "/assets/company/AirBaltic_logo.svg",
     iconBg: "#E6DEDD",
-    date: "November 2023",
+    date: "Jan 2024 – Sep 2024",
     points: [
-      "Developing a healthcare SaaS platform using Next.js, TypeScript, and Tailwind CSS, significantly enhancing user experience.",
-      "Maintaining an efficient codebase under senior guidance, ensuring adherence to best practices in software development.",
-      "Contributing to the DND form microfrontend, improving user interaction by 30%.",
-      "Collaborating in UI/UX design efforts, leading to a 25% reduction in component development time.",
+      "Supported interior maintenance of the Airbus A220-300 fleet, prioritising sustainability, passenger comfort, and reliability.",
+      "Improved maintenance workflows, contributing to a 15% reduction in turnaround time through process optimisation and detailed documentation.",
+      "Collaborated with cross-functional teams to streamline processes, ensuring compliance with airworthiness standards.",
+      "Optimised inventory and material stock control, reducing project delays by 10% and ensuring part availability.",
+      "Conducted quality control inspections and prepared records for audit readiness",
+      "Assisted in training new staff, improving team efficiency and reducing onboarding time by 25%.",
     ],
   },
-  {
-    title: "Full Stack Developer Intern",
-    company_name: "Intern at DRDO CABS",
-    icon: "/assets/company/drdo-cabs.png",
-    iconBg: "#E6DEDD",
-    date: "November 2023",
-    points: [
-      "Developed a Facility Bookings Manager for DRDO CABS using TypeScript, React, Node.js, Express, Prisma, and MySQL within a month.",
-      "Actively addressed client issues and queries, ensuring seamless integration with their platform and local cluster system.",
-      "Led the design and implementation of the frontend, providing a user-friendly interface for efficient facility management.",
-      "Collaborated with a backend intern throughout the internship to deliver a comprehensive solution tailored to DRDO CABS's needs.",
-    ],
-  },
+  // {
+  //   title: "Full Stack Developer Intern",
+  //   company_name: "Intern at DRDO CABS",
+  //   icon: "/assets/company/drdo-cabs.png",
+  //   iconBg: "#E6DEDD",
+  //   date: "November 2023",
+  //   points: [
+  //     "Developed a Facility Bookings Manager for DRDO CABS using TypeScript, React, Node.js, Express, Prisma, and MySQL within a month.",
+  //     "Actively addressed client issues and queries, ensuring seamless integration with their platform and local cluster system.",
+  //     "Led the design and implementation of the frontend, providing a user-friendly interface for efficient facility management.",
+  //     "Collaborated with a backend intern throughout the internship to deliver a comprehensive solution tailored to DRDO CABS's needs.",
+  //   ],
+  // },
   // {
   //   title: "Frontend Developer",
   //   company_name: "Tech team member at GDSC MVJCE",
@@ -303,65 +288,65 @@ const testimonials = [
 
 const projects = [
   {
-    name: "QuickEdit: AI-Powered Image & Video Editor",
+    name: "AR Training Solutions for Workforce Optimisation",
     description:
-      "QuickEdit is an AI-powered online image and video editor built using the Cloudinary AI API. It offers robust features for both images and videos, with user-friendly authentication and a tiered credit system. Enhance your media editing experience with cutting-edge AI tools!",
+      "Airbus Project Management, Broughton, UK (Team Leader). Developed AR-based training modules that reduced training time by 35% and boosted knowledge retention by 50%. Implemented real-time AR workflows that cut error rates by 40% and streamlined onboarding, reducing time by 25%.lt using the Cloudinary AI API. It offers robust features for both images and videos, with user-friendly authentication and a tiered credit system. Enhance your media editing experience with cutting-edge AI tools!",
     tags: [
       {
-        name: "typescript",
+        name: "unity",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "ar",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "training-systems",
         color: "pink-text-gradient",
       },
       {
-        name: "shadcn",
+        name: "project-management",
         color: "orange-text-gradient",
       },
-      {
-        name: "cloudinary",
-        color: "yellow-text-gradient",
-      },
+      // {
+      //   name: "cloudinary",
+      //   color: "yellow-text-gradient",
+      // },
     ],
     image:
-      "https://res.cloudinary.com/dqiqi75hm/image/upload/v1734187202/quickedit/dp6y8s8dstqfpq7svmj5.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/QuickEdit",
-    deployed_link: "https://quick-edit-app.vercel.app",
-  },
+      "/assets/tech/Airbus2.png",
+  //   source_code_link: "https://github.com/",
+  //   deployed_link: "https://",
+   },
   {
-    name: "FigPro",
+    name: "Smart Hangar Digital Twin for Aircraft C-Check Optimisation",
     description:
-      "FigPro is a web-based collaborative design tool similar to Figma, built using Next.js, TypeScript, Tailwind CSS, and LiveBlocks API, Fabric.js. With FigPro, teams can seamlessly collaborate on designing interfaces in real-time with a plethora of features.",
+      "Group Design Project, Cranfield, UK (Team Leader). Led a 5-member team to create a Smart Hangar Digital Twin that improved C-Check efficiency by 20–30%. Modeled layouts in Blender, scripted aircraft movement in Python, and applied AnyLogic to optimise logistics and technician workflows.",
     tags: [
       {
-        name: "typescript",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "blender",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "anylogic",
         color: "pink-text-gradient",
       },
       {
-        name: "fabricjs",
+        name: "jira",
         color: "orange-text-gradient",
       },
       {
-        name: "liveblocks",
+        name: "digitaltwin",
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/fig-pro.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/FigPro",
-    deployed_link: "https://fig-pro-github.vercel.app",
+    image: "/assets/tech/Airbus3.png",
+    // source_code_link: "https://github.com/",
+    // deployed_link: "https://",
   },
   // {
   //   name: "GDSC Website",
@@ -394,36 +379,36 @@ const projects = [
   //   deployed_link: "https://gdscmvjce.vercel.app/",
   // },
   {
-    name: "Facility Management System",
+    name: "Predictive Maintenance Framework for Aircraft C-Checks",
     description:
-      "The Facility Management System is a comprehensive management solution developed using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to book time slots in facilities and provides role-based access control for various functionalities.",
+      "Individual Research Project, Cranfield, UK. Built a machine learning framework to classify and forecast aircraft C-Checks using 100,000+ maintenance records. Applied clustering and classification models in Python, with Power BI dashboards to visualise fault trends and workload planning.",
     tags: [
       {
-        name: "typescript",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "react",
+        name: "scikitlearn",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "powerbi",
         color: "pink-text-gradient",
       },
       {
-        name: "node.js",
+        name: "machinelearning",
         color: "orange-text-gradient",
       },
       {
-        name: "tanstack/react-query",
+        name: "aircraft-maintenance",
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/facility-manager.png",
-    source_code_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System",
-    deployed_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System?tab=readme-ov-file#demo",
+    image: "/assets/projects/Airbus4.png",
+    // source_code_link:
+    //   "https://github.com/",
+    // deployed_link:
+    //   "https://github.com/",
   },
   // {
   //   name: "Netflix Clone",
@@ -448,7 +433,7 @@ const projects = [
   //     },
   //   ],
   //   image: "/assets/projects/netflix-clone.png",
-  //   source_code_link: "https://github.com/Shivam-Sharma-1/Netflix-Clone.git",
+  //   source_code_link: "https://github.com/",
   //   deployed_link: "https://netflix-clone12345.vercel.app",
   // },
   // {
@@ -470,7 +455,7 @@ const projects = [
   //     },
   //   ],
   //   image: "/assets/projects/vanlife.png",
-  //   source_code_link: "https://github.com/Shivam-Sharma-1/Van-Life.git",
+  //   source_code_link: "https://github.com/",
   //   deployed_link: "https://myvanlife.netlify.app",
   // },
   // {
@@ -492,8 +477,8 @@ const projects = [
   // 		}
   // 	],
   // 	image: "/assets/projects/spooky-run.png",
-  // 	source_code_link: "https://github.com/Shivam-Sharma-1/Spooky-Run.git",
-  // 	deployed_link: "https://shivam-sharma-1.github.io/Spooky-Run"
+  // 	source_code_link: "https://github.com/",
+  // 	deployed_link: "https:/"
   // }
 ];
 
@@ -501,47 +486,44 @@ const socials = [
   {
     id: "github",
     icon: <GithubIcon />,
-    link: "https://github.com/Shivam-Sharma-1",
+    link: "https://github.com/",
   },
   {
     id: "linkedin",
     icon: <LinkedInIcon />,
-    link: "https://www.linkedin.com/in/shivamsharma77607",
+    link: "https://www.linkedin.com/in/monish-sathyaprakash-79ab87199/",
   },
   {
     id: "x",
     icon: <XIcon />,
-    link: "https://twitter.com/Shivam_1_Sharma",
+    link: "https://twitter.com/",
   },
   {
     id: "instagram",
     icon: <InstagramIcon />,
-    link: "https://www.instagram.com/_.shivam._.here._",
+    link: "https://www.instagram.com/",
   },
 ];
 
 const heroTexts = [
-  "React/Next.js developer",
+  "Aviation Technology Specialist",
   500,
-  "Freelancer",
+  "MSc Aviation DT Student @ Cranfield",
   500,
-  "Full-Stack developer",
+  "Digital Twin Developer",
   500,
-  "Frontend developer",
+  "Predictive Maintenance Engineer",
   500,
-  "Backend developer",
+  "Operations & MRO Optimizer",
   500,
-  "Problem solver",
+  "Simulation & Data Analyst",
+  500,
+  "Future Aviation Leader",
   500,
 ];
 
+
 export {
-  navLinks,
-  services,
-  technologies,
-  experiences,
-  testimonials,
-  projects,
-  socials,
-  heroTexts,
+  experiences, heroTexts, navLinks, projects, services, socials, technologies, testimonials
 };
+

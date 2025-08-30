@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import DOMPurify from "dompurify";
+import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 
 import { slideIn } from "../utils/motion";
 
@@ -40,16 +40,16 @@ function Contact() {
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: DOMPurify.sanitize(form.name),
-          to_name: "Shivam Sharma",
+          to_name: "Monish Sathyaprakash",
           from_email: DOMPurify.sanitize(form.email),
-          to_email: "shivamsharma77607@gmail.com",
+          // to_email: "monishsathyaprakash@gmail.com",
           message: DOMPurify.sanitize(form.message),
         },
-        process.env.NEXT_PUBLIC_EMAILJS_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -64,7 +64,7 @@ function Contact() {
         },
         (error) => {
           setLoading(false);
-          console.log(error);
+          console.error("❌ EmailJS Error:", error);
           alert("Something went wrong. Please try again later.");
         }
       );

@@ -1,27 +1,27 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
-import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
 import { fadeIn, textVariant } from "@/utils/motion";
+import { technologies } from "../constants";
+import { SectionWrapper } from "../hoc";
 
 const tech = [
   technologies.languages,
-  technologies.frameworks,
-  technologies.libraries,
-  technologies.databases,
-  technologies.tools,
-  technologies.environments,
+  technologies.Engineering_Software,
+  technologies.Data_and_Analytics_Tools,
+  technologies.Project_and_Workflow_Tools,
+  // technologies.tools,
+  // technologies.environments,
 ];
 
 const techVariants = [
   "Languages",
-  "Frameworks",
-  "Libraries",
-  "Databases",
-  "Tools",
-  "Environments",
+  "Engineering Software",
+  "Data & Analytics Tools",
+  "Project & Workflow Tools",
+  // "Tools",
+  // "Environments",
 ];
 
 function Tech() {
@@ -29,7 +29,7 @@ function Tech() {
     <div className="w-full h-fit flex gap-2 md:flex-row flex-col" key={index}>
       <h3 className="md:hidden">{techVariants[index]}</h3>
       <motion.div
-        className="w-full flex flex-row flex-wrap gap-2"
+        className="w-full flex flex-row flex-wrap gap-5"
         variants={fadeIn("right", "spring", 0.75)}
         initial="hidden"
         whileInView="show"
@@ -61,7 +61,7 @@ function Tech() {
   ));
 
   const techNames = techVariants.map((tech, index) => (
-    <h3 className="h-[50px] md:flex items-center hidden" key={index}>
+    <h3 className="h-[40px] md:flex items-center hidden whitespace-nowrap text-[15px]" key={index}>
       {tech}
     </h3>
   ));
@@ -91,12 +91,12 @@ function Tech() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="flex flex-col justify-between h-full gap-5"
+          className="flex flex-col justify-between h-full gap-10"
         >
           {techNames}
         </motion.div>
-        <div className="w-[2px] h-[400px] dark:bg-ctnSecondaryDark bg-ctnSecondaryLight rounded-lg md:flex hidden mx-8" />
-        <div className="md:w-[80%] w-full pl-2 h-full flex flex-col gap-8">
+        <div className="w-[10px] h-[300px] dark:bg-ctnSecondaryDark bg-ctnSecondaryLight rounded-lg md:flex hidden mx-8" />
+        <div className="md:w-[80%] w-full pl-2 h-full flex flex-col gap-10">
           {languages}
         </div>
       </motion.div>

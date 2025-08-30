@@ -1,11 +1,10 @@
-import React from "react";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Tilt from "react-parallax-tilt";
 
+import truncateText from "@/utils/truncate";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import truncateText from "@/utils/truncate";
 import GithubLogo from "./../public/assets/icons/github.svg";
 import RocketLogo from "./../public/assets/icons/rocket.svg";
 
@@ -15,8 +14,8 @@ function ProjectCard({
   description,
   tags,
   image,
-  source_code_link,
-  deployed_link,
+  // source_code_link,
+  // deployed_link,
 }) {
   const CHAR_LIMIT = 280;
 
@@ -44,20 +43,20 @@ function ProjectCard({
           </div>
 
           <div className="absolute inset-0 flex justify-start m-3 card-img_hover">
-            <div
+            {/* <div
               onClick={() => window.open(deployed_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <RocketLogo className="w-1/2 h-1/2 mr-[2px] z-10" />
-            </div>
+            </div> */}
           </div>
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
+            {/* <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <GithubLogo className="w-2/3 h-2/3 z-10" />
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -106,10 +105,7 @@ function Works() {
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
         >
-          These projects showcase my practical skills and experience, each with
-          descriptions and links to code repositories and live demos. They
-          demonstrate my ability to handle complex challenges, adapt to
-          different technologies, and oversee projects from start to finish.
+          These projects highlight my expertise in aerospace engineering, digital transformation, and AI-driven solutions. From developing AR training systems to building digital twin models and predictive maintenance frameworks, they showcase my ability to bridge engineering and technology. Each project demonstrates my skills in applying cutting-edge tools to solve real-world aviation challenges, optimize workflows, and deliver measurable impact.
         </motion.p>
       </div>
 

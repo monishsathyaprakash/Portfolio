@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import { socials } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -28,27 +28,34 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Shivam Sharma, a passionate web developer and problem
-          solver. Currently, I&apos;m the Tech Team Lead at GDSC MVJCE, and
-          I&apos;m pursuing a B.E. degree in Computer Science and Engineering at
-          MVJ College Of Engineering in Bengaluru, India, with an expected
-          graduation year of 2025. I&apos;m a software developer with experience
-          in TypeScript, TailwindCSS, and JavaScript. I specialize in frameworks
-          such as React, Node.js, Next.js, React-Three-Fiber, and Three.js. My
-          knowledge extends to fundamental data structures and algorithms,
-          making me well-versed in frontend web development.
+          Hello! I'm Monish Sathyaprakash, an aspiring operations leader and
+          digital aviation enthusiast with a passion for driving innovation
+          through simulation, predictive maintenance, and cross-functional
+          collaboration. I’m currently pursuing an MSc in Aviation Digital
+          Technology Management at Cranfield University, UK, and I hold a BSc in
+          Aviation Transport from Riga Technical University, Latvia. I bring
+          hands-on experience in aviation operations, having interned at
+          airBaltic where I optimized interior maintenance workflows and
+          streamlined inventory control. My technical toolkit includes Python,
+          Power BI, AnyLogic, Blender, and JIRA, and I’ve led impactful projects
+          like a Smart Hangar Digital Twin and an Airbus AR training solution to
+          enhance operational efficiency. With a strong foundation in systems
+          thinking, data-driven decision-making, and aviation engineering
+          principles, I’m passionate about improving MRO processes, implementing
+          digital transformation strategies, and advancing into leadership roles
+          within aviation and manufacturing sectors.
           <br className="sm:block hidden" />
           Let&apos;s collaborate to bring your ideas to life!
         </div>
         <div className="w-fit break-words">
           <Link
-            href="mailto:shivamsharma77607@gmail.com"
+            href="mailto:monishs11@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="hover:text-primary w-full transition-all duration-100 ease-in flex md:items-center gap-2 md:flex-row flex-wrap word-break hover:-translate-y-2"
           >
             <EmailIcon className="w-[30px] h-[30px]" />
-            shivamsharma77607@gmail.com
+            monishs11@gmail.com
           </Link>
         </div>
         <div className="flex gap-5 items-center">
@@ -64,7 +71,7 @@ function About() {
           ))}
         </div>
         <Link
-          href="document/Shivam_Sharma_Resume.pdf"
+          href="document/Monish_Sathyaprakash_Resume.pdf"
           target="_blank"
           rel="noreferrer"
           className="w-fit"
