@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Shivam Sharma",
-    "email": "shivamsharma77607@gmail.com",
-    "github": "@Shivam-Sharma-1",
-    "linkedin": "https://www.linkedin.com/in/shivamsharma77607"
+    "name": "Monish sathyaprakash",
+    "email": "monishsathyaprakash@gmail.com",
+    "github": "monishsathyaprakash",
+    "linkedin": "https://www.linkedin.com/in/monish-sathyaprakash-79ab87199/"
   },
   "scripts": {
     "dev": "next dev",
